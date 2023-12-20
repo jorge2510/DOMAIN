@@ -22,10 +22,10 @@ form {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 400px;
+    width: 350px;
     padding: 40px;
     transform: translate(-50%, -50%);
-    background: rgba(0,0,0,.6);
+    background: rgb(2, 2, 2);
     border-radius: 10px;
 }
 .login-box h2{
@@ -71,11 +71,11 @@ form {
     color: #03e9f4;
     font-size: 16px;
     text-decoration: none;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     overflow: hidden;
     transition: .5s;
     margin-top: 40px;
-    letter-spacing: 4px;
+    /* letter-spacing: 4px; */
 }
 .login-box a:hover {
     background: #03e9f4;
@@ -98,12 +98,25 @@ form {
     background: linear-gradient(90deg, transparent, #03e9f4);
     animation: btn-animal 1s linear infinite;
 }
+a .reg {
+    left: 0%;
+}
+
+.login-box .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    position: absolute;
+    top: -55px;
+    left: calc(50% - 50px);
+}
 
 
 </style>
 </head>
 <body>
     <div class="login-box">
+        <img class="logo" src="./iconos/logoD-circle.png" alt="Logo Domain">
         <h2>Login</h2>
             <form>
                 <div class="user-box">
@@ -114,12 +127,15 @@ form {
                     <input type="password" name="" required="">
                     <label>Password</label>
                 </div>
+                <a class="reg" href="#">
+                    Registrarse
+                </a>
                 <a href="#">
                     <span></span>
                     <span></span>
                     <span></span>
                     <span></span>
-                    Submit
+                    Iniciar
                 </a>
             </form>
                
