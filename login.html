@@ -22,11 +22,13 @@ form {
     position: absolute;
     top: 50%;
     left: 50%;
-    width: 350px;
+    width: 300px;
     padding: 40px;
     transform: translate(-50%, -50%);
     background: rgb(2, 2, 2);
     border-radius: 10px;
+    box-shadow: 16px 14px 20px #333334;
+
 }
 .login-box h2{
     margin: 0 0 38;
@@ -110,7 +112,10 @@ a .reg {
     top: -55px;
     left: calc(50% - 50px);
 }
-
+.login-box form  .reset-password{
+    font-size: 10px;
+    color: #0b7d83;
+}
 
 </style>
 </head>
@@ -137,6 +142,7 @@ a .reg {
                     <span></span>
                     Iniciar
                 </a>
+                <a class="reset-password" href="">Do you forget yout password?</a>
             </form>
                
         </div>
