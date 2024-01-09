@@ -59,8 +59,8 @@
             text-decoration: none;
             color: #fff;
         }
-        nav .list a::hover {
-            border-bottom: 4px solid #675bf9;
+        nav .list a:hover {
+            border-bottom: 4px solid #03e9f4;
 
         }
         #toggle{
@@ -115,6 +115,57 @@
         display: block;
         
     }
+    /* BARRA DE BUSQUEDA */
+    .search-container{
+        position: absolute;
+        left: 48%;
+        top: 45%;
+        transform: translate(-50%, -50%);
+        padding: 10px;
+    }
+    input {
+        outline: none;
+        box-sizing: border-box;
+        height: 60px;
+        width: 0;
+        padding: 0 20px;
+        border-radius: 50px;
+        font-size: 20px;
+        border: 1px solid #03e9f4;
+        transition: all .7s ease;
+    }
+
+    ::placeholder {
+        color: grey;
+    }
+    .btn {
+        position: absolute;
+        right: 0;
+        top: 0;
+        width: 80px;
+        height: 80px;
+        background:#03e9f4 ;
+        line-height: 80px;
+        border-radius: 50%;
+        text-align: center;
+        cursor: pointer;
+        transition: .5s;
+    }
+    .btn i {
+        font-size: 25px;
+        color: white;
+        line-height: 80px;
+        transition: all .7s ease;
+    }
+    .search-container:hover input {
+        width: 350px;
+    }
+    .search-container:hover i {
+        transform: rotate(-360deg);     
+    }
+    .btn:hover {
+        background: red;
+    }
 }
 
     </style>
@@ -127,8 +178,8 @@
         </div>
         <ul class="list">
             <li><a href="">Mi cuenta</a></li>
-            <li> <a href="">Configuraciones</a></li>
-            <li><a href="">Ayuda y soporte</a></li>
+            <li><a href="">Configuraciones</a></li>
+            <li><a href="">Ayuda y soporte</a></li> 
         </ul>
         <label for="toggle" class="icon-bars">
             
@@ -137,8 +188,13 @@
             <div class="line"></div>
 
         </label>
-
-
     </nav>
+    <div class="search-container">
+        <input type="text" placeholder="Buscar">
+        <div class="btn">
+            <i class="fa fa-search"></i>
+        </div>
+    </div>
+    
 </body>
 </html>
